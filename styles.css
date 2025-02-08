@@ -1,0 +1,192 @@
+.nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding:0;
+  height: 100%;
+}
+.nav li{
+  margin-right: 20px;
+}
+.nav a {
+  text-decoration: #333;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(1, 24, 68);
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+
+/* ... (styles pour .hero-content, h1, p, button) */
+.hero-content {
+  position: absolute; /* Positionnement absolu pour le centrer */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrage parfait */
+  text-align: center; /* Texte centré */
+  color: rgb(255, 255, 255); /* Couleur du texte (adaptez-la à votre image de fond) */
+}
+
+.hero-content h1 {
+  font-size: 5em; /* Taille du titre */
+  margin-bottom: 20px; /* Marge en dessous du titre */
+}
+
+.hero-content p {
+  font-size: 1.2em; /* Taille du paragraphe */
+  margin-bottom: 30px; /* Marge en dessous du paragraphe */
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+    position:center;
+    margin-bottom: "30px";
+    top:50%;
+    left:50%;
+    background-color:rgb(255, 251, 0);
+    border: 1px;
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    text-decoration-color: white;
+   
+
+  
+  /* Style de votre bouton */}
+  .fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .fade-in.visible {opacity: 1;}
+
+  #mon-parcours {
+    padding: 50px;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .timeline {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #f0f0f0;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1; /* Pour que la ligne soit derrière les conteneurs */
+  }
+  
+  .container {
+    padding: 20px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  .container.left {
+    left: 0;
+  }
+  
+  .container.right {
+    left: 50%;
+  }
+  
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #f0f0f0;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .container.left::after {
+    left: -17px;
+  }
+  
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+
+.passion {
+  background-color: #020c36;
+}
+
+  .passion-content h1 {
+    margin-top: 20px;
+    font-size: 3em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  .passion-content p {
+    text-align: center;
+    font-size: 1.4em;
+    color: #ffffff;
+  }
+  .box {
+    position: center;
+    width: 250px;
+    padding: 20px;
+    border: solid 2px #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .box i {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: rgb(243, 200, 199);
+  }
+.box h3 {
+  margin-bottom: 10px;
+  color: rgb(255, 0, 0);
+}
+.box p{
+  color: rgb(255, 255, 255);
+}
+.box:hover{
+transform: translate(-5px);
+box-shadow: 0 5px 10px  rgba(0, 0, 0, 0.);
+}
+.box-container{
+  top: 20px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: none;
+}
